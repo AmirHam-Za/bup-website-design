@@ -1,0 +1,416 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,200;1,6..12,300&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,600;0,700;1,300;1,400;1,500&family=Roboto&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+
+.hero-image{
+    background-image: url("https://www.bup.codespecies.com/public/upload/slider/20230724_1690183546347.jpg");
+    height:300px;
+    background-position: bottom; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.faculty_department,
+.lab,
+.research-card,
+.single-news {
+    position: relative;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+
+}
+
+.faculty_department:before,
+.lab:before,
+.research-card:before,
+.single-news:before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    width: 0px;
+    height: 5px;
+    border-radius: 0px 0px 0px 8px;
+
+    background-color: #253b80;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+}
+
+.faculty_department:after,
+.lab:after,
+.research-card:after,
+.single-news:after {
+    position: absolute;
+    content: '';
+    right: 0px;
+    bottom: 0px;
+    width: 0px;
+    height: 5px;
+    border-radius: 8px 0px 8px 0px;
+    background-color: #253b80;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+} */
+
+.faculty_department:hover,
+.lab:hover,
+.research-card:hover,
+.single-news:hover {
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.faculty_department:hover::before,
+.faculty_department:hover::after,
+.lab:hover::before,
+.lab:hover::after,
+.research-card:hover::before,
+.research-card:hover::after,
+.single-news:hover::before,
+.single-news:hover::after {
+    width: 100%;
+}
+
+.research-card {
+    margin-bottom: 24px;
+}
+
+
+
+.main-footer {
+    background-color: #253b80;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+.main-footer{
+    background-image: url( https://www.bup.codespecies.com/public/frontend/assets/img/bup/banner.jpg );
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    opacity: .9;
+  
+  }
+.main-footer::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    top: 0;
+    left: 0;
+    background: #253b80;
+    opacity: .8;
+}
+
+
+.copiright-section p{
+    font-size: 10px;
+}
+
+
+.card{
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 5px, rgba(14, 30, 37, 0.32) 0px 2px 6px 0px;
+
+}
+.card:hover{
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 5px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+}
+
+
+
+/* Dropdown */
+.main-menu .navbar {
+    overflow: hidden;
+    
+  }
+  
+  .main-menu .navbar a {
+    /* color: white; */
+    text-decoration: none;
+  }
+  
+  
+  .main-menu .dropdown .dropbtn {
+  
+    color: white;
+   
+  }
+  
+  .main-menu .dropdown-content  {
+    
+  }
+  
+  .main-menu .dropdown-content a:hover {
+    /* background-color: #ddd; */
+  }
+  .dropdown-content {
+	padding: 20px;
+	right: 10px;
+    top:138px;
+}
+  .main-menu .show {
+    display: block;
+  }
+.dropdown-content a{
+    transition: .3s;
+}
+.dropdown-content a:hover{
+    color:#ebab22;
+}
+
+
+
+
+/*#######################################
+ LOGIN PAGE 
+ ######################################*/
+ .container .login-bg1{
+    background-image:url("left-bg.jpeg");
+    min-height: 530px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #FAFAFA;
+    padding: 25px;
+    border-radius: 22px 0px 0px 22px;
+    padding-left: 40px;
+    position: relative;
+}
+.container .login-bg1::after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* float: left; */
+    /* display: block; */
+    height: 100%;
+    width: 162px;
+    background: transparent;
+    background-image: url("shadow.png");
+    background-size: cover;
+}
+
+
+
+
+
+
+.navigation {
+  /* height: 70px; */
+  /* background: #0b0edd; */
+}
+
+.brand {
+  /* position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em; */
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* .nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+} */
+
+nav {
+  /* float: right; */
+}
+nav ul {
+  list-style: none;
+  /* margin: 0; */
+  /* padding: 0; */
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: rgba(30, 64, 175, 0.533);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  background: rgba(30, 64, 175);
+  color: #ebbb1d;
+  
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " ▾";
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+	display: none;
+	position: absolute;
+	top: 31px;
+	right: 0;
+	background: 0b0edd;
+	height: 70px;
+	width: 70px;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+@media only screen and (max-width: 798px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 799px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+article {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* ********************************************
+     Slider Height 
+********************************************** */
+
+.bx-wrapper .bx-viewport{
+height: 50vh !important;
+}
+.bx-wrapper{
+  border:none !important;
+}
+
+/* Event Details Page */
+
+.banner-section{
+  background-image: url( https://www.bup.codespecies.com/public/frontend/assets/img/bup/banner.jpg );
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    opacity: .9;
+}
+
+/* ********************************************
+Remove Bx slider autoplay & pager button
+********************************************** */
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto,
+.bx-wrapper .bx-pager {
+  display: none;
+}
